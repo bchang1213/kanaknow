@@ -1,0 +1,10 @@
+.rowGuide{
+  display: inline;
+  vertical-align: top;
+  margin-right: 1em;
+}
+
+.singleSyllables, .doubleSyllables{
+  display: inline-block;
+  vertical-align: top;
+}

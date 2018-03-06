@@ -1,0 +1,11 @@
+.letterStyle{
+  display: inline-block;
+}
+
+.buttonArea{
+}
+
+button{
+  border: none;
+  display: block;
+}

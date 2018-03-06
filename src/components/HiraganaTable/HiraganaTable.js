@@ -1,0 +1,74 @@
+import React, { Component } from 'react';
+import './HiraganaTable.css';
+import HiraRow from "../HiraRow/HiraRow.js";
+import Letter from "../Letter/Letter.js";
+import {hiraganaChart, yoonHiragana, dakuonHiragana} from '../characters.js';
+
+class HiraganaTable extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      gojuon:[],
+      dakuon:[],
+      yoon:[]
+    }
+  }
+  componentDidMount() {
+    //set state for HiraganaChart object
+    this.setState({gojuon: hiraganaChart});
+    this.setState({dakuon: dakuonHiragana});
+    this.setState({yoon: yoonHiragana});
+  }
+
+  renderGojuon(){
+    return this.state.gojuon.map(hiraganaRowData =>
+      <table>
+        <tr>
+          <div className="rowGuide">{hiraganaRowData.romaji}-row</div>
+          <HiraRow key={hiraganaRowData.romaji} hiraganaRowData={hiraganaRowData} />
+        </tr>
+      </table>
+    );
+  }
+
+  renderDakuon(){
+    return this.state.dakuon.map(dakuonRowData =>
+      <table>
+        <tr>
+          <div className="rowGuide">{dakuonRowData.romaji}-row</div>
+          <HiraRow key={dakuonRowData.romaji} hiraganaRowData={dakuonRowData} />
+        </tr>
+      </table>
+    );
+  }
+
+  renderYoon(){
+    return this.state.yoon.map(yoonRowData =>
+      <table>
+        <tr>
+          <div className="rowGuide">{yoonRowData.romaji}-row</div>
+          <HiraRow key={yoonRowData.romaji} hiraganaRowData={yoonRowData} />
+        </tr>
+      </table>
+    );
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="singleSyllables">
+          <h5>Gojūon(五十音)</h5>
+          {this.renderGojuon()}
+          <h5>Dakūon</h5>
+          {this.renderDakuon()}
+        </div>
+        <div className="doubleSyllables">
+          <h5>Yōon (拗音)</h5>
+          {this.renderYoon()}
+        </div>
+      </div>
+    );
+  }
+}
+
+export default HiraganaTable;
