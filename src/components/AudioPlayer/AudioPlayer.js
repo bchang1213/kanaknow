@@ -5,7 +5,7 @@ var FontAwesome = require('react-fontawesome');
 class AudioPlayer extends Component {
   constructor(){
     super();
-    state={
+    this.state={
       play: false,
       pause: false,
       text: "thisprops"
@@ -13,8 +13,8 @@ class AudioPlayer extends Component {
   }
 
 
-  onEnd (){
-    this.setState({ play: false })
+  onEnd = () =>{
+    this.setState({ play: false });
   }
 
   render () {
@@ -27,7 +27,7 @@ class AudioPlayer extends Component {
             play
             pause={this.state.pause}
             text={this.props.eachSound}
-            onEnd={this.onEnd()}
+            onEnd={this.onEnd}
             lang="ja-JP"
           />
         )}
