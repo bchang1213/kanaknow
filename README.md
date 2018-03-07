@@ -4,7 +4,7 @@ It uses Redux as a data store.
 
 TOOLS USED:
 
-React.js / Node.js / npm / yarn / Redux
+React.js / Node.js / npm / Redux
 
 dependencies: flexboxgrid, fontawesome, material-ui, react-color, react-dropzone, react-dom, react-modal, react-sketch, react-tabs, react-tap-event-plugin, react-voice-components.
 ---------------------------------------------------------------------------------------------
