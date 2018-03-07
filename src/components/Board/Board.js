@@ -11,6 +11,7 @@ class Board extends Component {
       <div>
         <h1>KnowKana</h1>
         <h5>The place to "benkyou" your kana!</h5>
+        <p>(Try clicking on the characters.)</p>
         <Tabs>
           <TabList>
             <Tab>Hiragana (ひらがな)</Tab>
