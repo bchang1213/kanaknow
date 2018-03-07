@@ -1,3 +1,13 @@
+KnowKana is a single page app made with React.js. It uses a Text-To-Speech Engine in Japanese to vocalize Japanese Kana and also allows the user to practice writing their kana.
+
+It uses Redux as a data store.
+
+TOOLS USED:
+
+React.js / Node.js / npm / yarn / Redux
+
+dependencies: flexboxgrid, fontawesome, material-ui, react-color, react-dropzone, react-dom, react-modal, react-sketch, react-tabs, react-tap-event-plugin, react-voice-components.
+---------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
