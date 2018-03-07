@@ -14,7 +14,6 @@
     "flexboxgrid": "^6.3.1",
     "font-awesome": "^4.7.0",
     "google-tts-api": "0.0.2",
-    "html-webpack-plugin": "^3.0.6",
     "material-ui": "^0.20.0",
     "path": "^0.12.7",
     "react": "^16.2.0",
@@ -42,6 +41,9 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-react": "^6.24.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.0.6",
     "webpack": "^4.1.1"
-  }
+  },
+  "build-and-deploy": "npm run build && s3cmd sync build/* s3://bezos && echo '🚀  Deployed!'"
 }
