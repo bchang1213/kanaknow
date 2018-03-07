@@ -6,7 +6,7 @@ import Letter from '../Letter/Letter.js';
 class Row extends Component {
 
   renderLetter(){
-    var eachRow = this.props.hiraganaRowData;
+    var eachRow = this.props.rowData;
     var rowArray = [];
     var romajiSound = "";
     for(let letter in eachRow){
