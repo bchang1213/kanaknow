@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './Row.css';
-
 import Letter from '../Letter/Letter.js';
 
 class Row extends Component {
-
   renderLetter(){
     var eachRow = this.props.rowData;
     var rowArray = [];
@@ -24,7 +22,7 @@ class Row extends Component {
 
   render() {
     return (
-      <td className="rowGuide">
+      <td>
         {this.renderLetter()}
       </td>
     );

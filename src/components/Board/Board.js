@@ -9,6 +9,8 @@ class Board extends Component {
   render() {
     return (
       <div>
+        <h1>KanaKnow</h1>
+        <h5>The place to "benkyou" your kana!</h5>
         <Tabs>
           <TabList>
             <Tab>Hiragana (ひらがな)</Tab>
