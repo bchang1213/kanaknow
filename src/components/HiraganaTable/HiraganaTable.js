@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './HiraganaTable.css';
-import HiraRow from "../HiraRow/HiraRow.js";
+import Row from "../Row/Row.js";
 import Letter from "../Letter/Letter.js";
 import {hiraganaChart, yoonHiragana, dakuonHiragana} from '../characters.js';
 
@@ -26,7 +26,7 @@ class HiraganaTable extends Component {
         <tbody>
           <tr>
             <td className="rowGuide">{hiraganaRowData.romaji}-row</td>
-            <HiraRow key={hiraganaRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={hiraganaRowData} />
+            <Row key={hiraganaRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={hiraganaRowData} />
           </tr>
         </tbody>
       </table>
@@ -39,7 +39,7 @@ class HiraganaTable extends Component {
         <tbody>
           <tr>
             <td className="rowGuide">{dakuonRowData.romaji}-row</td>
-            <HiraRow key={dakuonRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={dakuonRowData} />
+            <Row key={dakuonRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={dakuonRowData} />
           </tr>
         </tbody>
       </table>
@@ -52,7 +52,7 @@ class HiraganaTable extends Component {
         <tbody>
           <tr>
             <td className="rowGuide">{yoonRowData.romaji}-row</td>
-            <HiraRow key={yoonRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={yoonRowData} />
+            <Row key={yoonRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={yoonRowData} />
           </tr>
         </tbody>
       </table>
@@ -62,6 +62,7 @@ class HiraganaTable extends Component {
   render() {
     return (
       <div>
+        <h3>Hiragana(ひらがな)</h3>
         <div className="singleSyllables">
           <h5>Gojūon(五十音)</h5>
           {this.renderGojuon()}

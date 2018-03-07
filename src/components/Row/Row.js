@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './HiraRow.css';
+import './Row.css';
 
 import Letter from '../Letter/Letter.js';
 
-class HiraRow extends Component {
+class Row extends Component {
 
   renderLetter(){
     var eachRow = this.props.hiraganaRowData;
@@ -31,4 +31,4 @@ class HiraRow extends Component {
   }
 }
 
-export default HiraRow;
+export default Row;
