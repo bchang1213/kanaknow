@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Letter.css';
-import { hiraganaChart } from '../characters.js';
 import AudioPlayer from "../AudioPlayer/AudioPlayer.js";
 import Modal from 'react-modal';
 import DrawCanvas from '../DrawCanvas/DrawCanvas.js';

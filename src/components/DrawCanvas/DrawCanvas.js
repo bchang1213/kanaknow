@@ -165,7 +165,7 @@ class DrawCanvas extends React.Component {
               cols={1} rows={1} style={styles.gridTile}
               actionIcon={<IconButton onTouchTap={(c) => this._removeMe(index)}><RemoveIcon
                                                                                 color="white"/></IconButton>}>
-              <img src={drawing}/>
+              <img alt="initialdrawing" src={drawing}/>
             </GridTile>
         );
     };

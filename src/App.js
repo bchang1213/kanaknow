@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Board from './components/Board/Board.js';
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as Actions from './actions'
 

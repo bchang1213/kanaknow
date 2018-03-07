@@ -3,9 +3,6 @@ import VoicePlayer from './VoicePlayer.js';
 var FontAwesome = require('react-fontawesome');
 
 class AudioPlayer extends Component {
-  constructor(props){
-    super(props);
-  }
 //
 //   render () {
 //     console.log(this.props)
