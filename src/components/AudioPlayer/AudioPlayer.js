@@ -3,34 +3,17 @@ import VoicePlayer from './VoicePlayer.js';
 var FontAwesome = require('react-fontawesome');
 
 class AudioPlayer extends Component {
-//
-//   render () {
-//     console.log(this.props)
-//     return (
-//       <div>
-//         <button onClick={() => this.props.reduxProps.playAudio()}>{this.props.eachSound}</button>
-//
-//         {this.props.reduxProps.playStatus && (
-//           <VoicePlayer
-//             play
-//             pause={this.props.reduxProps.playStatus}
-//             text='welcome'
-//             onEnd={console.log("hit on end")}
-//           />
-//         )}
-//       </div>
-//     )
-//   }
-// }
-
-  state = {
-    play: false,
-    pause: false,
-    text: "thisprops"
+  constructor(){
+    super();
+    state={
+      play: false,
+      pause: false,
+      text: "thisprops"
+    }
   }
 
 
-  onEnd = () => {
+  onEnd (){
     this.setState({ play: false })
   }
 
@@ -44,7 +27,7 @@ class AudioPlayer extends Component {
             play
             pause={this.state.pause}
             text={this.props.eachSound}
-            onEnd={this.onEnd}
+            onEnd={this.onEnd()}
             lang="ja-JP"
           />
         )}
