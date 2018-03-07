@@ -1,0 +1,4 @@
+const PLAY_AUDIO = "PLAY_AUDIO";
+const PAUSE_AUDIO = "PAUSE_AUDIO";
+
+export {PLAY_AUDIO, PAUSE_AUDIO};

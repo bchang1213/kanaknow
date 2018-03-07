@@ -4,23 +4,17 @@ import HiraganaTable from '../HiraganaTable/HiraganaTable.js';
 import Katakana from '../Katakana/Katakana.js';
 
 class Board extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: true, };
-  }
-  componentDidMount() {
-  }
 
   render() {
     return (
       <div>
         {/* HIRAGANA CHART */}
         <div className="hiraganaChart">
-          <HiraganaTable />
+          <HiraganaTable reduxProps={this.props.reduxProps} />
         </div>
         {/* KATAKANA CHART */}
         <div className="katakanaChart">
-          
+
         </div>
       </div>
     );

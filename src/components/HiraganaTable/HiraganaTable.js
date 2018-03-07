@@ -23,10 +23,12 @@ class HiraganaTable extends Component {
   renderGojuon(){
     return this.state.gojuon.map(hiraganaRowData =>
       <table>
-        <tr>
-          <div className="rowGuide">{hiraganaRowData.romaji}-row</div>
-          <HiraRow key={hiraganaRowData.romaji} hiraganaRowData={hiraganaRowData} />
-        </tr>
+        <tbody>
+          <tr>
+            <td className="rowGuide">{hiraganaRowData.romaji}-row</td>
+            <HiraRow key={hiraganaRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={hiraganaRowData} />
+          </tr>
+        </tbody>
       </table>
     );
   }
@@ -34,10 +36,12 @@ class HiraganaTable extends Component {
   renderDakuon(){
     return this.state.dakuon.map(dakuonRowData =>
       <table>
-        <tr>
-          <div className="rowGuide">{dakuonRowData.romaji}-row</div>
-          <HiraRow key={dakuonRowData.romaji} hiraganaRowData={dakuonRowData} />
-        </tr>
+        <tbody>
+          <tr>
+            <td className="rowGuide">{dakuonRowData.romaji}-row</td>
+            <HiraRow key={dakuonRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={dakuonRowData} />
+          </tr>
+        </tbody>
       </table>
     );
   }
@@ -45,10 +49,12 @@ class HiraganaTable extends Component {
   renderYoon(){
     return this.state.yoon.map(yoonRowData =>
       <table>
-        <tr>
-          <div className="rowGuide">{yoonRowData.romaji}-row</div>
-          <HiraRow key={yoonRowData.romaji} hiraganaRowData={yoonRowData} />
-        </tr>
+        <tbody>
+          <tr>
+            <td className="rowGuide">{yoonRowData.romaji}-row</td>
+            <HiraRow key={yoonRowData.romaji} reduxProps={this.props.reduxProps} hiraganaRowData={yoonRowData} />
+          </tr>
+        </tbody>
       </table>
     );
   }

@@ -2,15 +2,24 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Board from './components/Board/Board.js';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as Actions from './actions'
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <Board />
+        <Board reduxProps={this.props}
+        />
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  toPlay: state.audioReducer
+})
+
+export default connect(mapStateToProps, Actions)(App)
