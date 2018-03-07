@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Board from './components/Board/Board.js';
 import { bindActionCreators } from 'redux'

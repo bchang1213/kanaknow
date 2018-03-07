@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {VoicePlayer, VoiceRecognition} from 'react-voice-components';
+import VoicePlayer from './VoicePlayer.js';
 var FontAwesome = require('react-fontawesome');
 
 class AudioPlayer extends Component {
